@@ -19,5 +19,21 @@ body {
 	width: 100px;
 	height: 100px;
 	background: white;
-	box-shadow: inset 0 0 0 1px gray;
+	box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+}
+
+#start {
+	display: block;
+	margin: 10px auto;
+	width: 300px;
+	background: rgb(36, 36, 183);
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgb(153, 135, 254);
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+}
+
+.red-bg {
+	background-color: rgb(255, 4, 4);
 }
