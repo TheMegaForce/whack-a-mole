@@ -1,11 +1,12 @@
 $(document).ready(function () {
 	const $startButton = $("#start");
 	const $squares = $(".square");
+	const $points = $("#points");
 
 	$startButton.on("click", function () {
 		setInterval(function () {
 			randomSquare();
-		}, 2000);
+		}, 1000);
 		randomSquare();
 	});
 
@@ -15,6 +16,16 @@ $(document).ready(function () {
 
 		setTimeout(function () {
 			$(randomSquare).removeClass("red-bg");
-		}, 2000);
+		}, 1000);
 	}
+
+	$squares.on("click", function (event) {
+		if ($(event.target).hasClass("red-bg")) {
+			$(event.target).removeClass("red-bg");
+			const newPointValue = parseInt($points.text()) + 1;
+			$points.text(newPointValue);
+		} else {
+			console.log("remove point");
+		}
+	});
 });
