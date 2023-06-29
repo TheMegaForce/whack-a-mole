@@ -1,0 +1,23 @@
+body {
+	background: black;
+	color: white;
+}
+
+#scoreboard {
+	text-align: center;
+	border: 1px solid silver;
+}
+
+#grid {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: white;
+	box-shadow: inset 0 0 0 1px gray;
+}
